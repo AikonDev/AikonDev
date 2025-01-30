@@ -1,7 +1,7 @@
 <h1>Hi, I'm Ayaan! <br/>
 <h2>💻 Software Development Projects:</h2>
 
-- [Python Pong Game](https://github.com/AikonDev/PythonPong)
+- [Python Pong Game](https://github.com/AikonDev/PythonPongGame)
 
 <h2>📱 Connect with me:</h2>
 
