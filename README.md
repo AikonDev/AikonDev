@@ -2,6 +2,7 @@
 <h2>💻 Software Development Projects:</h2>
 
 - [Python Pong Game](https://github.com/AikonDev/PythonPongGame)
+- [Python Snake Game](https://github.com/AikonDev/PythonSnakeGame)
 
 <h2>📱 Connect with me:</h2>
 
