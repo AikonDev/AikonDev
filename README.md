@@ -1,7 +1,7 @@
 <h1>Hi, I'm Ayaan! <br/>
 <h2>💻 Software Development Projects:</h2>
   
-- [PDF Merger](https://github.com/AikonDev/PDFMerger)
+- [File Organiser](https://github.com/AikonDev/FileOrganiser)
 - [Python Snake Game](https://github.com/AikonDev/PythonSnakeGame)
 - [Python Pong Game](https://github.com/AikonDev/PythonPongGame)
 
