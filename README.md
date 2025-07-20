@@ -1,9 +1,10 @@
 <h1>Hi, I'm Ayaan! <br/>
 <h2>💻 Software Development Projects:</h2>
-  
-- [File Organiser](https://github.com/AikonDev/FileOrganiser)
-- [Python Snake Game](https://github.com/AikonDev/PythonSnakeGame)
-- [Python Pong Game](https://github.com/AikonDev/PythonPongGame)
+
+- [Password Generator #004](https://github.com/AikonDev/PasswordGenerator)
+- [File Organiser #003](https://github.com/AikonDev/FileOrganiser)
+- [Python Snake Game #002](https://github.com/AikonDev/PythonSnakeGame)
+- [Python Pong Game #001](https://github.com/AikonDev/PythonPongGame)
 
 <h2>📱 Connect with me:</h2>
 
