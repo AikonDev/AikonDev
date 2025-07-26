@@ -24,7 +24,6 @@ To further help solidify my **Python** basics I created a simple Snake game. Not
 As a first **Python** project I created a Pong game reminiscent of the original Atari game. In hindsight, this may have been too advanced for me at that stage, however I learnt a lot from the experience.
 
 ## Connect with me
-***[W.I.P. Blog]()***
 [LinkedIn](https://www.linkedin.com/in/ayaan-jaman-khan-b0410b34a/)
 
 
