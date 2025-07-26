@@ -2,7 +2,7 @@
 
 #### Technical Skills: Python, Bash, Linux Terminal, Microsoft Office, Google Workspace
 
-## Projects
+##👨‍💻 Projects
 ### Password Generator
 [Source Code & Files](https://github.com/AyaanJK/PasswordGenerator)
 
@@ -23,7 +23,7 @@ To further help solidify my **Python** basics I created a simple Snake game. Not
 
 As a first **Python** project I created a Pong game reminiscent of the original Atari game. In hindsight, this may have been too advanced for me at that stage, however I learnt a lot from the experience.
 
-## Connect with me
+##🤳 Connect with me
 [<img align="left" alt="AyaanJaman-Khan | LinkedIn" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" />][linkedin]
 
 [linkedin]: https://www.linkedin.com/in/ayaan-jaman-khan-b0410b34a/
