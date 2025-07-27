@@ -1493,14 +1493,14 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                // Remove .active and reset color from all nav links
+                // Remove .active from all nav links
                 document.querySelectorAll('.nav-links a').forEach(link => {
                     link.classList.remove('active');
-                    link.style.color = '';
                 });
-                // Add .active and color to the clicked link
-                this.classList.add('active');
-                this.style.color = 'var(--text-accent)';
+                // Add .active to the clicked nav link only if it's in the nav
+                if (this.closest('.nav-links')) {
+                    this.classList.add('active');
+                }
                 // Remove focus to prevent underline from staying
                 this.blur();
                 const target = document.querySelector(this.getAttribute('href'));
