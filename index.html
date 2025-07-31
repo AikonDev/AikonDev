@@ -435,6 +435,8 @@
             box-shadow: var(--shadow-medium);
             border: 1px solid var(--border);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
         }
 
         .project-card:hover {
@@ -451,7 +453,7 @@
         .project-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -461,6 +463,9 @@
 
         .project-content {
             padding: 32px;
+            display: flex;
+            flex-direction: column;
+            flex: 1; /* This makes it take up remaining space */
         }
 
         .project-content h3 {
@@ -471,16 +476,34 @@
         .project-content p {
             color: var(--text-secondary);
             margin-bottom: 24px;
+            flex: 1; /* This will expand to fill available space */
         }
 
         .project-links {
             display: flex;
             gap: 12px;
+            margin-top: auto; /* This ensures buttons stick to bottom */
         }
 
         .project-links .btn {
             padding: 8px 16px;
             font-size: 0.9rem;
+        }
+
+        .view-more-projects {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn-github {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .btn-github:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-large);
         }
 
         /* Education Section */
@@ -1043,7 +1066,7 @@
             </div>
             <div class="about-grid">
                 <div class="profile-image">
-                    <img src="img/pfp.jpg" alt="Ayaan Jaman-Khan">
+                    <img src="imgs/aboutme_thumb/pfp.jpg" alt="Ayaan Jaman-Khan">
                 </div>
                 <div class="about-text">
                     <p class="body">I am an ambitious A-Level student currently studying Mathematics, Physics and Economics. I have an innate interest in technology and I aim to be a degree apprentice in this field.</p>
@@ -1121,7 +1144,7 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/proj_thumbs/pass_gen_thumbnail.png" alt="Password Generator Project">
+                        <img src="imgs/proj_thumbs/python.png" alt="Password Generator Project">
                     </div>
                     <div class="project-content">
                         <h3 class="headline">Password Generator</h3>
@@ -1134,7 +1157,7 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/proj_thumbs/file_organiser_thumbnail.png" alt="File Organiser Project">
+                        <img src="imgs/proj_thumbs/python.png" alt="File Organiser Project">
                     </div>
                     <div class="project-content">
                         <h3 class="headline">File Organiser</h3>
@@ -1147,7 +1170,7 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/proj_thumbs/snake_thumbnail.png" alt="Snake Game Project">
+                        <img src="imgs/proj_thumbs/python.png" alt="Snake Game Project">
                     </div>
                     <div class="project-content">
                         <h3 class="headline">Python Snake Game</h3>
@@ -1160,7 +1183,7 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/proj_thumbs/pong_thumbnail.png" alt="Pong Game Project">
+                        <img src="imgs/proj_thumbs/python.png" alt="Pong Game Project">
                     </div>
                     <div class="project-content">
                         <h3 class="headline">Python Pong Game</h3>
@@ -1171,6 +1194,13 @@
                     </div>
                 </div>
             </div>
+
+            <div class="view-more-projects">
+                <a href="https://github.com/AyaanJK" class="btn btn-github" target="_blank" rel="noopener noreferrer">
+                    View More Projects on GitHub
+                </a>
+            </div>
+            
         </div>
     </section>
 
@@ -1228,6 +1258,19 @@
                 <div class="experience-timeline" id="exp-timeline-work">
                     <div class="experience-group">
                         <!-- Sorted by newest first (left to right) -->
+                        <div class="experience-item">
+                            <div class="experience-marker"></div>
+                            <div class="experience-meta">
+                                <span class="experience-type">Remote</span>
+                                <span class="experience-date">July 2025</span>
+                            </div>
+                            <div class="experience-role">PwC – Intern</div>
+                            <ul class="experience-details">
+                                <li>Applied problem-solving skills to real-world scenarios through "Give it a Go" sessions for Audit, Consulting, and Tax.</li>
+                                <li>Collaborated with 4 other people on a creative project, strengthening my inter-personal, teamwork and communication skills.</li>
+                                <li>Gained insight into how technology such as AI is applied to traditional service lines like Audit and Tax.</li>
+                            </ul>
+                        </div>
                         <div class="experience-item">
                             <div class="experience-marker"></div>
                             <div class="experience-meta">
@@ -1421,7 +1464,7 @@
 
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <img src="img/linkedin.png" alt="LinkedIn icon">
+                            <img src="imgs/contact_imgs/linkedin.png" alt="LinkedIn icon">
                         </div>
                         <div class="contact-details">
                             <h3 class="headline">LinkedIn</h3>
