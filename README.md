@@ -1,4 +1,4 @@
-# Aspiring DevOps Engineer
+# Aspiring Cybersecurity Specialist
 
 #### Technical Skills: Python, Bash, Linux Terminal, Microsoft Office, Google Workspace
 
