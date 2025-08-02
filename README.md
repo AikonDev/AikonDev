@@ -1,6 +1,6 @@
 # Aspiring Cybersecurity Specialist
 
-#### Technical Skills: Python, Bash, Linux Terminal, Microsoft Office, Google Workspace
+#### Technical Skills: Python, Lua, Bash, Linux Terminal, Microsoft Office, Google Workspace
 
 ## 👨‍💻 Projects:
 ### Password Generator
