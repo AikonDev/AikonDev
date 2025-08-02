@@ -3,6 +3,11 @@
 #### Technical Skills: Python, Lua, Bash, Linux Terminal, Microsoft Office, Google Workspace
 
 ## 👨‍💻 Projects:
+### Website Network Status Checker
+[Source Code & Files](https://github.com/AyaanJK/WebsiteStatusChecker)
+
+Created a **Lua** script that reads a list of websites from a .txt file that can be edited and returns the network status in the form of 'UP' or 'DOWN'.
+
 ### Password Generator
 [Source Code & Files](https://github.com/AyaanJK/PasswordGenerator)
 
