@@ -619,11 +619,11 @@
             scroll-behavior: smooth;
         }
         .experience-timeline::-webkit-scrollbar {
-            height: 10px;
+            height: 12px;
         }
         .experience-timeline::-webkit-scrollbar-thumb {
-            background: var(--border);
-            border-radius: 5px;
+            background: var(--text-secondary);
+            border-radius: 6px;
         }
         .experience-timeline::before {
             content: '';
@@ -1047,10 +1047,33 @@
     /* Move timeline scroll buttons further from edges on mobile */
     @media (max-width: 768px) {
         .timeline-scroll-btn.left {
-            left: 8px;
+            left: -12px;
         }
         .timeline-scroll-btn.right {
-            right: 8px;
+            right: -12px;
+        }
+        .timeline-scroll-btn {
+            width: 36px;
+            height: 36px;
+            font-size: 1.4rem;
+        }
+        .timeline-scroll-btn .chevron svg {
+            width: 16px;
+            height: 16px;
+        }
+        /* Add more spacing to timeline container on mobile */
+        .experience-timeline {
+            margin: 0 20px;
+        }
+    }
+
+    /* Hide scroll buttons on very small screens */
+    @media (max-width: 480px) {
+        .timeline-scroll-btn {
+            display: none;
+        }
+        .experience-timeline {
+            margin: 0;
         }
     }
     </style>
@@ -1618,8 +1641,8 @@
 
         // Intersection Observer for fade-in animations
         const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.2, // Adjust this value (0-1) to control when animation triggers
+            rootMargin: '0px 0px -50px 0px' // Negative margin makes elements trigger earlier
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -1627,6 +1650,8 @@
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
                 } else {
+                    // Remove the visible class when element is no longer in view
+                    // This allows the animation to play again when scrolling back
                     entry.target.classList.remove('visible');
                 }
             });
