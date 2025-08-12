@@ -794,8 +794,8 @@ nav {
     background: var(--gradient-primary);
     color: white;
     box-shadow: var(--shadow-medium);
-    padding: 14px 28px; /* Slightly larger */
-    font-size: 1.1rem;
+    padding: 12px 24px; 
+    font-size: 1rem;
     display: inline-flex;
     margin: 0 auto; /* Center horizontally */
 }
@@ -1004,6 +1004,13 @@ nav {
 .contact-icon img {
     width: 28px;
     height: 28px;
+    object-fit: contain;
+    display: block;
+}
+
+.contact-icon svg {
+    width: 24px;
+    height: 24px;
     object-fit: contain;
     display: block;
 }
