@@ -314,10 +314,10 @@ nav {
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
 }
 
-/* Updated Hero Grid Layout */
+/* Hero Grid Layout */
 .hero-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -332,8 +332,8 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 80px; /* Increased from 40px to 80px */
-    margin-top: 20px; /* Alternatively, you could use margin instead of padding */
+    padding-top: 80px; 
+    margin-top: 20px; 
 }
 
 .hero-text h1 {
@@ -343,6 +343,12 @@ nav {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     padding-bottom: 0.2em;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide any overflow */
+    text-overflow: ellipsis; /* Add ... if text is cut off */
+    font-size: clamp(2rem, 8vw, 5rem); /* Responsive font scaling */
+    line-height: 1.1; /* Tighter line height */
+    max-width: 100%; /* Ensure it stays within container */
 }
 
 .hero-text p {
@@ -501,6 +507,12 @@ nav {
     .hero-about .profile-image {
         width: 200px;
         height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-text h1 {
+        font-size: clamp(1.8rem, 7vw, 2.2rem); /* Even smaller on tiny screens */
     }
 }
 
