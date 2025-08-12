@@ -3,6 +3,9 @@
 #### Technical Skills: Python, Lua, Bash, Linux Terminal, Microsoft Office, Google Workspace
 
 ## 👨‍💻 Projects:
+### YouTube-to-MP3
+[Source Code & Files](https://github.com/AyaanJK/youtube-to-mp3)
+
 ### Bulk File Renamer
 [Source Code & Files](https://github.com/AyaanJK/bulk-file-renamer)
 
