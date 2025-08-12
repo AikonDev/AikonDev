@@ -774,13 +774,30 @@ nav {
 
 .view-more-projects {
     text-align: center;
-    margin-top: 40px;
+    margin: 60px auto 0; /* Top margin only */
+    padding: 40px 0; /* Equal padding top and bottom */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects.section {
+    padding-bottom: 40px; /* Reduced bottom padding */
+}
+
+#education.section {
+    padding-top: 40px; /* Reduced top padding */
 }
 
 .btn-github {
     background: var(--gradient-primary);
     color: white;
     box-shadow: var(--shadow-medium);
+    padding: 14px 28px; /* Slightly larger */
+    font-size: 1.1rem;
+    display: inline-flex;
+    margin: 0 auto; /* Center horizontally */
 }
 
 .btn-github:hover {
@@ -883,10 +900,15 @@ nav {
 .experience-group {
     display: flex;
     gap: 40px;
+    padding-bottom: 20px; /* Adds space at bottom */
+    width: max-content; /* Prevents unwanted wrapping */
+    min-width: 100%; /* Ensures it fills container */
 }
 .experience-item {
-    min-width: 340px;
+    min-width: 300px; /* Slightly smaller for mobile */
     max-width: 340px;
+    width: 90vw; /* Responsive width */
+    margin: 0 auto; /* Centers items */
     background: var(--surface);
     border-radius: 20px;
     box-shadow: var(--shadow-medium);
@@ -940,6 +962,11 @@ nav {
     margin-right: 8px;
     font-weight: 600;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.experience-timeline {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
 /* Contact Section */
@@ -1281,5 +1308,15 @@ footer p {
     }
     .experience-timeline {
         margin: 0;
+    }
+}
+@media (max-width: 768px) {
+    .experience-timeline {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+    .experience-item {
+        min-width: 280px;
+        width: 85vw;
     }
 }

@@ -72,24 +72,31 @@ document.querySelectorAll('.section-header').forEach(header => {
   headerObserver.observe(header);
 });
 
-// Enhanced scroll animations for cards
-const cardObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
+// Enhanced scroll animations for all section containers
+const animateOnScroll = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            setTimeout(() => {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }, index * 100);
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        } else {
+            // Reset the animation when element leaves viewport
+            entry.target.style.opacity = '0';
+            entry.target.style.transform = 'translateY(40px)';
         }
     });
-}, { threshold: 0.1 });
+}, { 
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+});
 
-// Observe project and skill cards
-document.querySelectorAll('.project-card, .skill-card').forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(40px)';
-    card.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
-    cardObserver.observe(card);
+// Observe all animated elements
+document.querySelectorAll(
+    '.project-card, .skill-card, .education-item, .experience-item, .contact-item, .contact-form'
+).forEach(element => {
+    element.style.opacity = '0';
+    element.style.transform = 'translateY(40px)';
+    element.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+    animateOnScroll.observe(element);
 });
 
 // Form validation and enhancement
