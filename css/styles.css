@@ -1009,10 +1009,14 @@ nav {
 }
 
 .contact-icon svg {
-    width: 24px;
-    height: 24px;
+    width: 28px !important;
+    height: 28px !important;
+    max-width: 28px;
+    max-height: 28px;
     object-fit: contain;
     display: block;
+    margin: 0 auto;
+    flex-shrink: 0;
 }
 
 .contact-details h3 {
