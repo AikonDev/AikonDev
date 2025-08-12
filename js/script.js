@@ -55,36 +55,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Intersection Observer for fade-in animations
-const observerOptions = {
-    threshold: 0.2,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        } else {
-            entry.target.classList.remove('visible');
-        }
-    });
-}, observerOptions);
-
-// Observe all fade-in elements
-document.querySelectorAll('.fade-in').forEach(el => {
-    observer.observe(el);
-});
-
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    const rate = scrolled * -0.5;
-    
-    if (hero) {
-        hero.style.transform = `translateY(${rate}px)`;
+// Section Header Underline Observer
+const headerObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const h2 = entry.target.querySelector('h2');
+    if (entry.isIntersecting) {
+      h2.classList.add('in-view');
+    } else {
+      h2.classList.remove('in-view');
     }
+  });
+}, { threshold: 0.5 });
+
+// Observe all section headers
+document.querySelectorAll('.section-header').forEach(header => {
+  headerObserver.observe(header);
 });
 
 // Enhanced scroll animations for cards
@@ -178,3 +163,16 @@ function addTimelineScroll(btnLeftId, btnRightId, timelineId) {
 }
 addTimelineScroll('exp-scroll-left', 'exp-scroll-right', 'exp-timeline-work');
 addTimelineScroll('exp-scroll-left-add', 'exp-scroll-right-add', 'exp-timeline-additional');
+
+// Download CV functionality
+document.getElementById('download-cv').addEventListener('click', function(e) {
+    e.preventDefault();
+    // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
+    const cvUrl = 'path/to/your/cv.pdf';
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'Ayaan_Jaman-Khan_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
