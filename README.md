@@ -3,6 +3,11 @@
 #### Technical Skills: Python, Lua, Bash, Linux Terminal, Microsoft Office, Google Workspace
 
 ## 👨‍💻 Projects:
+### YouTube-to-MP3
+[Source Code & Files](https://github.com/AyaanJK/youtube-to-mp3)
+
+Developed a **Python** script that lets you donwnload one video or even a whole YouTube playlist as MP3 files.
+
 ### Bulk File Renamer
 [Source Code & Files](https://github.com/AyaanJK/bulk-file-renamer)
 
