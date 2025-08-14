@@ -3,6 +3,11 @@
 #### Technical Skills: Python, Lua, Bash, Linux Terminal, Microsoft Office, Google Workspace
 
 ## 👨‍💻 Projects:
+### Password Manager
+[Source Code & Files](https://github.com/AyaanJK/password-manager)
+
+This is my most ambitious and potentially most useful project yet: a Python-based, local, and offline password manager. It's designed as a secure alternative to cloud-based services like Dashlane or LastPass. While those are proven to be secure, an offline manager provides the extra peace of mind that comes from knowing your data is never in the cloud. For maximum security, it features encryption and two-factor authentication, and I'll be building on my previous password generator project to include a more advanced version directly within the manager.
+
 ### YouTube-to-MP3
 [Source Code & Files](https://github.com/AyaanJK/youtube-to-mp3)
 
