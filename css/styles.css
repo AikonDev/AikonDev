@@ -371,6 +371,7 @@ nav {
     justify-content: centre; /* Centre align social icons */
 }
 
+/* Original social icon hover effect
 .social-icon {
     width: 44px;
     height: 44px;
@@ -402,7 +403,51 @@ nav {
 .social-icon svg {
     width: 24px;
     height: 24px;
+} */
+
+.social-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-small);
 }
+
+.social-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+    background: var(--bg-secondary); 
+    border-color: var(--border); 
+    color: var(--text-primary);
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: filter 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon:hover img {
+    filter: brightness(0.9);
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon:hover svg {
+    opacity: 0.9; 
+} 
 
 .hero-about {
     display: flex;

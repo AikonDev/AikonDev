@@ -170,16 +170,3 @@ function addTimelineScroll(btnLeftId, btnRightId, timelineId) {
 }
 addTimelineScroll('exp-scroll-left', 'exp-scroll-right', 'exp-timeline-work');
 addTimelineScroll('exp-scroll-left-add', 'exp-scroll-right-add', 'exp-timeline-additional');
-
-// Download CV functionality
-document.getElementById('download-cv').addEventListener('click', function(e) {
-    e.preventDefault();
-    // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
-    const cvUrl = 'path/to/your/cv.pdf';
-    const link = document.createElement('a');
-    link.href = cvUrl;
-    link.download = 'Ayaan_Jaman-Khan_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
